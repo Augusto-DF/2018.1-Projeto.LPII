@@ -45,9 +45,10 @@ public class FileManipulator {
 	}
 	
 	/**
-	 * Reescreve um arquivo de texto
-	 * @param filename
-	 * @param buffer (ArrayList - String)
+	 * Escreve em um arquivo texto. 
+	 * @param filename	- Nome do arquivo
+	 * @param target	- Alvo que será escrito no arquivo.
+	 * @param diretorio	- Diretório no qual o arquivo estará armazenado (Caso o dirétório não exista o programa irá cria-lo).
 	 * @throws IOException
 	 */
 	public void WriteFile(String filename, String target, String diretorio)throws IOException {

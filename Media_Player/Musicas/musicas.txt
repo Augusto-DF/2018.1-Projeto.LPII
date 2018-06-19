@@ -1,2 +1,0 @@
-2;../Media_Player/Musicas/2.mp3;
-Rap do aranha;/home/mattheus30/Área de Trabalho/Teste/pasta01/Rap do aranha.mp3

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Vip extends User{
 	
-	//ArrayList<PlaListy> playLists = new ArrayList();
+	ArrayList<PlayList> playLists = new ArrayList();
 	
 	public Vip(String nome, String senha, boolean vip) {
 		super(nome, senha, vip);
