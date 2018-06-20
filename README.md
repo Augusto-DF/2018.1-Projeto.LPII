@@ -1,4 +1,4 @@
 # 2018.1-Projeto.LPII
 Projeto que simula um Media Player:
 	- Mattheus Augusto Pinheiro de Oliveira
-	- Tiago
+	- Thiago da Costa Monteiro
