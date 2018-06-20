@@ -43,4 +43,16 @@ public class Vip extends User{
 	public void clear() {
 		
 	}
+	
+	/**
+	 * Lista o nome de todas as Play Lists de um usuário vip.
+	 * @return Array de string com cada nome de Play List
+	 */
+	public ArrayList<String> getPlayLists(){
+		ArrayList <String> names = new ArrayList();
+		for(int i = 0; i < playLists.size(); i++) {
+			names.add(playLists.get(i).getNome());
+		}
+		return names;
+	}
 }

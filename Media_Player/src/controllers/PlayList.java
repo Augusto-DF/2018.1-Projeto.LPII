@@ -8,14 +8,32 @@ public class PlayList {
 	
 	public PlayList(String nome) {
 		this.nome = nome;
-	}
+	}	
 	
+	/**
+	 * @return the nome
+	 */
+	public String getNome() {
+		return nome;
+	}
+
+
+
+	/**
+	 * @param nome the nome to set
+	 */
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+
 	/**
 	 * Adiciona uma musica no ArrayLIst pl.
 	 * @param music
 	 */
 	public void addMusic(Music music) {
-		
+		pl.add(music);
 	}
 	
 	/**
@@ -23,7 +41,13 @@ public class PlayList {
 	 * @param name
 	 */
 	public void removeMusic(String nome) {
-		
+		int index = 0;
+		for(int i = 0; i < pl.size(); i++) {
+			if(pl.get(i).getNome() == nome) {
+				index = i;
+			}
+		}		
+		pl.remove(index);
 	}
 	
 	/**
@@ -34,10 +58,22 @@ public class PlayList {
 	//public Music findMusic(String nome)/* throw <Alguma coisa>*/ {
 		
 	//}
+	
+	/**
+	 * Executa a playlist
+	 */
+	public void play() {
+		for(Music music : pl) {
+			music.tocar();
+		}
+	}
+	
 	/**
 	 * Limpa o Array de musicas
 	 */
 	public void clear() {
-		
+		for(int i = 0; i < pl.size(); i++) {
+			pl.remove(i);
+		}
 	}
 }
